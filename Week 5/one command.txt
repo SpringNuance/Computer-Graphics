@@ -1,0 +1,53 @@
+Open Powershell in the project directory, then paste these commands to generate images
+
+// R1 and R2
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_01_single_sphere.txt -output .\color.png -size 200 200 color.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_01_single_sphere.txt -output .\depth.png -size 200 200 -depth 9 10 depth.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_01_single_sphere.txt -output .\normal.png -size 200 200 -normals normal.png
+
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_02_five_spheres.txt -output .\5color.png -size 200 200 5color.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_02_five_spheres.txt -output .\5depth.png -size 200 200 -depth 9 12 5depth.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r1+r2_02_five_spheres.txt -output .\5normal.png -size 200 200 -normals 5normal.png
+
+// R3
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r3_spheres_perspective.txt -output .\color.png -size 200 200 color.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r3_spheres_perspective.txt -output .\depth.png -size 200 200 -depth 9 12 depth.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r3_spheres_perspective.txt -output .\normal.png -size 200 200 -normals normal.png
+
+// R4
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_colored_lights.txt -output .\r4_colored_lights.png -size 200 200 r4_colored_lights.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_diffuse_ball.txt -output .\r4_diffuse_ball.png -size 200 200 r4_diffuse_ball.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_diffuse+ambient_ball.txt -output .\r4_diffuse+ambient_ball.png -size 200 200 r4_diffuse+ambient_ball.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_exponent_variations.txt -output .\r4_exponent_variations.png -size 200 200 r4_exponent_variations.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_exponent_variations_back.txt -output .\r4_exponent_variations_back.png -size 200 200 r4_exponent_variations_back.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_point_light_circle.txt -output .\r4_point_light_circle.png -size 200 200 r4_point_light_circle.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r4_point_light_circle_d2.txt -output .\r4_point_light_circle_d2.png -size 200 200 r4_point_light_circle_d2.png
+
+// R5
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r5_spheres_plane.txt -output .\color.png -size 300 300 color.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r5_spheres_plane.txt -output .\depth.png -size 300 300 -depth 9 15 depth.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r5_spheres_plane.txt -output .\normal.png -size 300 300 -normals normal.png
+
+// R6 
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r6_bunny_mesh_200.txt -output .\bunny200.png -size 300 300 bunny200.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r6_bunny_mesh_1000.txt -output .\bunny1000.png -size 300 300 bunny1000.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r6_cube_orthographic.txt -output .\cubeOrtho.png -size 300 300 cubeOrtho.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r6_cube_perspective.txt -output .\cubePers.png -size 300 300 cubePers.png
+
+// R7
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r7_colored_shadows.txt -output .\coloredShadows.png -size 200 200 -shadows coloredShadows.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r7_simple_shadow.txt -output .\simpleShadow.png -size 200 200 -shadows simpleShadow.png
+.\example.exe -input .\exe\scenes\r7_colored_shadows.txt -output .\coloredShadows.png -size 200 200 -shadows coloredShadows.png
+.\example.exe -input .\exe\scenes\r7_simple_shadow.txt -output .\simpleShadow.png -size 200 200 -shadows simpleShadow.png
+
+// R8
+.\example.exe -input .\exe\scenes\r8_reflective_sphere.txt -output .\reflectiveSphere.png -size 200 200 -shadows -bounces 3 -weight 0.01 reflectiveSphere0bounce.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r8_reflective_sphere.txt -output .\reflectiveSphere0bounce.png -size 200 200 -shadows -bounces 0 -weight 0.01 reflectiveSphere0bounce.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r8_reflective_sphere.txt -output .\reflectiveSphere1bounce.png -size 200 200 -shadows -bounces 1 -weight 0.01 reflectiveSphere1bounce.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r8_reflective_sphere.txt -output .\reflectiveSphere2bounce.png -size 200 200 -shadows -bounces 2 -weight 0.01 reflectiveSphere2bounce.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r8_reflective_sphere.txt -output .\reflectiveSphere3bounce.png -size 200 200 -shadows -bounces 3 -weight 0.01 reflectiveSphere3bounce.png
+
+// R9
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r9_sphere_triangle.txt -output .\sphereTriangleUniform.png -size 9 9 -uniform-samples sphereTriangleUniform.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r9_sphere_triangle.txt -output .\sphereTriangleNormal.png -size 9 9 -regular-samples ssphereTriangleNormal.png
+.\bin\assignment_Win32_Release.exe -input .\exe\scenes\r9_sphere_triangle.txt -output .\sphereTriangleJittered.png -size 9 9 -jittered-samples sphereTriangleJittered.png
